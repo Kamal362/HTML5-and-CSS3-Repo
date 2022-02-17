@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:blueviolet;
+}
+body div{
+    margin-left:40px;
+    padding-top:200px;
+    padding-left:27%;  
+    width: 500px;
+    height: 100px; 
+}
