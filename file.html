@@ -4,10 +4,18 @@
         <link rel="stylesheet" type="text/css" href="stylsheetFile.css">
     </head>
     <body>
-       <div>
-           <img id="imagesContainer" src="images/10.jpg">
+       <div id="box"> 
+          <div id="auto_display">
+              <img id="imagesContainer" src="images/10.jpg">
+           </div>
+          <div id="click_display">
+            <img id="display" src="images/10.jpg">
+            <center>
+               <button onclick="imagesChangeNext()" id="prev">Previous</button>
+               <button onclick="imagesChangePrev()" id="next">Next</button>
+            <center>
+          </div>
        </div>
-       
        <script src="scriptFile.js"></script>
     </body>
 </html>

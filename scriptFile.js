@@ -9,5 +9,29 @@ function imagesChange(){
         index=0;
     }
 }
-setInterval(imagesChange, 1000);
-alert("Do you want to watch aventures stars?");
+setInterval(imagesChange, 2000);
+//alert("Do you want to watch aventures stars?");
+
+// click to display
+// const next = document.querySelector('next');
+// const prev = document.querySelector('prev');
+// var display = document.querySelector('click_display');
+
+var next = document.getElementById('next');
+var prev = document.getElementById('prev');
+var display = document.getElementById('display');
+
+function imagesChangeNext(){
+    display.setAttribute("src",array[index]);
+    index++;
+    if(index>=array.length){
+        index=0;
+    }
+}
+function imagesChangePrev(){
+    display.setAttribute("src",array[index]);
+    index++;
+    if(index<=array.length){
+        index=0;
+    }
+}
